@@ -12,10 +12,8 @@ class PostController extends Controller
 
     public function index()
     {
-        $categories = Category::all();
-        $posts = Post::orderBy('id','desc')->get();
+        $posts = Post::with("category")->orderBy('id','desc')->get();
         return $posts;
-        return $categories;
     }
 
     public function create()
@@ -35,7 +33,7 @@ class PostController extends Controller
 
     public function show($id)
     {
-        return Post::find($id);
+        return Post::with("category")->find($id);
     }
 
     public function edit($id)

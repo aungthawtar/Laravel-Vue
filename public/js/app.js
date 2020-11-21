@@ -42258,7 +42258,7 @@ var render = function() {
                 _c("label", { attrs: { for: "" } }, [_vm._v("Category : ")]),
                 _vm._v(" "),
                 _c("a", { attrs: { href: "" } }, [
-                  _c("span", [_vm._v(_vm._s(post.category_id))])
+                  _c("span", [_vm._v(_vm._s(post.category.name))])
                 ])
               ]),
               _vm._v(" "),

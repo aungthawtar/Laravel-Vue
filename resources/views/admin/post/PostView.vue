@@ -18,7 +18,7 @@
                       <h5>{{post.content}}</h5>
                       <div class="text-right">
                         <label for="">Category : </label>
-                        <a href=""><span>{{post.category_id}}</span></a>
+                        <a href=""><span>{{post.category.name}}</span></a>
                       </div>
                       <hr>
                       <div class="float-right mt-4">
